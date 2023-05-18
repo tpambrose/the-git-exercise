@@ -75,3 +75,127 @@ PS C:\Users\Frankk\Desktop\git exercise solution> git checkout main
 Switched to branch 'main'
 PS C:\Users\Frankk\Desktop\git exercise solution> git push origin main
 Everything up-to-date
+
+# Exercise 2
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Frankk\Desktop\git exercise solution> git add readme.md
+[main 4e52d87] commit
+PS C:\Users\Frankk\Desktop\git exercise solution> git add home.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git status
+On branch main
+  (use "git restore --staged <file>..." to unstage)
+        new file:   home.html
+
+PS C:\Users\Frankk\Desktop\git exercise solution> git stash save "home page"
+Saved working directory and index state On main: home page
+PS C:\Users\Frankk\Desktop\git exercise solution> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\Frankk\Desktop\git exercise solution> git stash list
+stash@{0}: On main: home page
+PS C:\Users\Frankk\Desktop\git exercise solution> git add about.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+
+PS C:\Users\Frankk\Desktop\git exercise solution> git stash
+Saved working directory and index state WIP on main: 4e52d87 commit
+PS C:\Users\Frankk\Desktop\git exercise solution> git stash list
+stash@{0}: WIP on main: 4e52d87 commit
+stash@{1}: On main: home page
+PS C:\Users\Frankk\Desktop\git exercise solution> git add team.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   team.html
+
+PS C:\Users\Frankk\Desktop\git exercise solution> git stash save "team page"
+Saved working directory and index state On main: team page
+PS C:\Users\Frankk\Desktop\git exercise solution> git stash list
+stash@{0}: On main: team page
+stash@{1}: WIP on main: 4e52d87 commit
+stash@{2}: On main: home page
+PS C:\Users\Frankk\Desktop\git exercise solution> git stash pop stash@{1}
+error: unknown switch `e'
+usage: git stash pop [--index] [-q | --quiet] [<stash>]
+
+    -q, --quiet           be quiet, only report errors
+    --index               attempt to recreate the index
+    Frankk@Frank MINGW64 ~/Desktop/git exercise solution (main)
+$ git stash list
+stash@{0}: On main: team page
+stash@{1}: WIP on main: 4e52d87 commit
+stash@{2}: On main: home page
+
+Frankk@Frank MINGW64 ~/Desktop/git exercise solution (main)
+$ git stash pop stash@{1}
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+
+Dropped stash@{1} (a66a174a26ea4d1216e4aa8b9d4bddf41ee3f7e3)
+
+Frankk@Frank MINGW64 ~/Desktop/git exercise solution (main)
+$ git stash list
+stash@{0}: On main: team page
+stash@{1}: On main: home page
+
+Frankk@Frank MINGW64 ~/Desktop/git exercise solution (main)
+$ git stash pop stash@{1}
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+        new file:   home.html 
+
+Dropped stash@{1} (e87e70faaed9c2e77a1f61d1ab674cd76f01d929)
+
+Frankk@Frank MINGW64 ~/Desktop/git exercise solution (main)
+$ git add .
+
+Frankk@Frank MINGW64 ~/Desktop/git exercise solution (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+        new file:   home.html
+
+
+Frankk@Frank MINGW64 ~/Desktop/git exercise solution (main)
+$ git commit -m "the about and home page"
+[main 252518f] the about and home page
+ 2 files changed, 20 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 home.html
+
+Frankk@Frank MINGW64 ~/Desktop/git exercise solution (main)
+$ git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Frankk@Frank MINGW64 ~/Desktop/git exercise solution (main)
+$ git push --set-upstream origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 1.43 KiB | 209.00 KiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/tpambrose/the-git-exercise
+   9c8be1f..252518f  main -> main
+branch 'main' set up to track 'origin/main'.
+
+Frankk@Frank MINGW64 ~/Desktop/git exercise solution (main)
+$
