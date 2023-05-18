@@ -230,3 +230,17 @@ Dropped stash@{0} (c3ed173243482f1818a5a36ebcbbca205d66be16)
 Frankk@Frank MINGW64 ~/Desktop/git exercise solution (main)
 $ git reset --hard
 HEAD is now at f474c5c new commit
+
+# Bundle 2
+# Exercise 1
+Frankk@Frank MINGW64 ~/Desktop/git exercise solution (main)
+$ git branch ft/bundle-2
+
+Frankk@Frank MINGW64 ~/Desktop/git exercise solution (main)
+$ git branch
+  Dev
+  ft/bundle-2
+* main
+
+Frankk@Frank MINGW64 ~/Desktop/git exercise solution (main)
+$ git add service.html
