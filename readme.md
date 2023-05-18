@@ -199,3 +199,34 @@ branch 'main' set up to track 'origin/main'.
 
 Frankk@Frank MINGW64 ~/Desktop/git exercise solution (main)
 $
+Frankk@Frank MINGW64 ~/Desktop/git exercise solution (main)
+$  git push --set-upstream origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.79 KiB | 916.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/tpambrose/the-git-exercise
+   252518f..f474c5c  main -> main
+branch 'main' set up to track 'origin/main'.
+
+Frankk@Frank MINGW64 ~/Desktop/git exercise solution (main)
+$ git stash list
+stash@{0}: On main: team page
+
+Frankk@Frank MINGW64 ~/Desktop/git exercise solution (main)
+$ git stash pop stash@{0}
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   team.html
+
+Dropped stash@{0} (c3ed173243482f1818a5a36ebcbbca205d66be16)
+
+Frankk@Frank MINGW64 ~/Desktop/git exercise solution (main)
+$ git reset --hard
+HEAD is now at f474c5c new commit
