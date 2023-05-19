@@ -244,3 +244,73 @@ $ git branch
 
 Frankk@Frank MINGW64 ~/Desktop/git exercise solution (main)
 $ git add service.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout ft/bundle-2
+Switched to branch 'ft/bundle-2'
+PS C:\Users\Frankk\Desktop\git exercise solution> git status
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        SERVICE.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Frankk\Desktop\git exercise solution> git add SERVICE.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git status
+  (use "git restore --staged <file>..." to unstage)
+        new file:   SERVICE.html
+
+PS C:\Users\Frankk\Desktop\git exercise solution>
+PS C:\Users\Frankk\Desktop\git exercise solution> git commit -m "update service in ft/bundle-2"
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 SERVICE.html
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Writing objects: 100% (6/6), 916 bytes | 458.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/tpambrose/the-git-exercise
+   d8809a9..31f7b47  ft/bundle-2 -> ft/bundle-2
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout main
+error: Your local changes to the following files would be overwritten by checkout:
+        SERVICE.html
+Please commit your changes or stash them before you switch branches.
+error: The following untracked working tree files would be overwritten by checkout:
+        service.html
+Please move or remove them before you switch branches.
+Aborting
+PS C:\Users\Frankk\Desktop\git exercise solution> git status
+On branch ft/bundle-2
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SERVICE.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Frankk\Desktop\git exercise solution> git add SERVICE.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git status
+On branch ft/bundle-2
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   SERVICE.html
+
+PS C:\Users\Frankk\Desktop\git exercise solution> git commit -m "new service update"
+[ft/bundle-2 8415e98] new service update
+ 1 file changed, 10 insertions(+)
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+PS C:\Users\Frankk\Desktop\git exercise solution> git push origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 584 bytes | 292.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/tpambrose/the-git-exercise
+   d8809a9..d38c950  main -> main
+PS C:\Users\Frankk\Desktop\git exercise solution> 
