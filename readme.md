@@ -1397,3 +1397,45 @@ branch 'ft/squashing' set up to track 'origin/ft/squashing'.
 PS C:\Users\Frankk\Desktop\git exercise solution> git checkout main
 Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
+# bundle 5 
+# Exercise 1
+PS C:\Users\Frankk\Desktop\git exercise solution> git pull
+Already up to date.
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\Frankk\Desktop\git exercise solution> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    home.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+PS C:\Users\Frankk\Desktop\git exercise solution> git add index.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git add home.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git status
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    home.html -> index.html
+
+PS C:\Users\Frankk\Desktop\git exercise solution> git commit -m "rename home to index html"
+[main b7507a7] rename home to index html
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\Frankk\Desktop\git exercise solution> git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 233 bytes | 233.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/tpambrose/the-git-exercise
+   0ec90a3..b7507a7  main -> main
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
