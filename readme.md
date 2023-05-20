@@ -230,7 +230,6 @@ Dropped stash@{0} (c3ed173243482f1818a5a36ebcbbca205d66be16)
 Frankk@Frank MINGW64 ~/Desktop/git exercise solution (main)
 $ git reset --hard
 HEAD is now at f474c5c new commit
-<<<<<<< HEAD
 
 # Bundle 2
 # Exercise 1
@@ -315,53 +314,3 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/tpambrose/the-git-exercise
    d8809a9..d38c950  main -> main
 PS C:\Users\Frankk\Desktop\git exercise solution> 
-=======
-Frankk@Frank MINGW64 ~/Desktop/git exercise solution (main)
-$ git checkout ft/bundle-2
-Switched to branch 'ft/bundle-2'
-
-Frankk@Frank MINGW64 ~/Desktop/git exercise solution (ft/bundle-2)
-$ git add --all
-
-Frankk@Frank MINGW64 ~/Desktop/git exercise solution (ft/bundle-2)
-$ git status
-On branch ft/bundle-2
-nothing to commit, working tree clean
-
-Frankk@Frank MINGW64 ~/Desktop/git exercise solution (ft/bundle-2)
-$ git add service.html
-fatal: pathspec 'service.html' did not match any files
-
-Frankk@Frank MINGW64 ~/Desktop/git exercise solution (ft/bundle-2)
-$ git stash list
-
-Frankk@Frank MINGW64 ~/Desktop/git exercise solution (ft/bundle-2)
-$ git checkout main
-Switched to branch 'main'
-Your branch is ahead of 'origin/main' by 1 commit.
-  (use "git push" to publish your local commits)
-
-Frankk@Frank MINGW64 ~/Desktop/git exercise solution (main)
-$ git checkout ft/bundle-2
-Switched to branch 'ft/bundle-2'
-
-Frankk@Frank MINGW64 ~/Desktop/git exercise solution (ft/bundle-2)
-$ git commit -m "update"
-On branch ft/bundle-2
-nothing to commit, working tree clean
-
-Frankk@Frank MINGW64 ~/Desktop/git exercise solution (ft/bundle-2)
-$ git push --set upstream origin ft/bundle-2
-error: src refspec origin does not match any
-error: failed to push some refs to 'upstream'
-
-Frankk@Frank MINGW64 ~/Desktop/git exercise solution (ft/bundle-2)
-$ git push origin ft/bundle-2
-Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
-remote: 
-remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
-remote:      https://github.com/tpambrose/the-git-exercise/pull/new/ft/bundle-2
-remote:
-To https://github.com/tpambrose/the-git-exercise
- * [new branch]      ft/bundle-2 -> ft/bundle-2
->>>>>>> ft/bundle-2
