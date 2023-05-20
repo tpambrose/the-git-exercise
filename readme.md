@@ -1198,3 +1198,91 @@ remote:
 To https://github.com/tpambrose/the-git-exercise
  * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
 branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
+
+ # bundle 4
+ # Exercise 1
+
+ PS C:\Users\Frankk\Desktop\git exercise solution> git checkout main
+Switched to branch 'main'
+M       readme.md
+Your branch is up to date with 'origin/main'.
+PS C:\Users\Frankk\Desktop\git exercise solution> git add readme.md
+PS C:\Users\Frankk\Desktop\git exercise solution> git status
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   readme.md
+
+PS C:\Users\Frankk\Desktop\git exercise solution> git commit -m "updated readme 
+>> "
+[main 5c039c8] updated readme
+ 1 file changed, 576 insertions(+)
+PS C:\Users\Frankk\Desktop\git exercise solution> git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 5.70 KiB | 729.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/tpambrose/the-git-exercise
+   a65d31e..5c039c8  main -> main
+PS C:\Users\Frankk\Desktop\git exercise solution> 
+ *  History restored 
+
+PS C:\Users\Frankk\Desktop\git exercise solution> git remote add git-copy https://github.com/tpambrose/git-exercise2 
+PS C:\Users\Frankk\Desktop\git exercise solution> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\Frankk\Desktop\git exercise solution> git remote
+git-copy
+origin
+PS C:\Users\Frankk\Desktop\git exercise solution> 
+ *  History restored 
+
+Your branch is up to date with 'origin/main'.
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   home.html
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Frankk\Desktop\git exercise solution> git add home.html
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   home.html
+
+PS C:\Users\Frankk\Desktop\git exercise solution> git commit -m "updated home page"
+[main d5b7962] updated home page
+PS C:\Users\Frankk\Desktop\git exercise solution> git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 362 bytes | 362.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/tpambrose/the-git-exercise
+   5c039c8..d5b7962  main -> main
+PS C:\Users\Frankk\Desktop\git exercise solution> git push git-copy
+Enumerating objects: 73, done.
+Counting objects: 100% (73/73), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (70/70), done.
+Writing objects: 100% (73/73), 15.15 KiB | 316.00 KiB/s, done.
+Total 73 (delta 37), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (37/37), done.
+To https://github.com/tpambrose/git-exercise2
+ * [new branch]      main -> main
+
+ # exercise 2
+ 
