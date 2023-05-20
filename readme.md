@@ -362,4 +362,4 @@ Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/tpambrose/the-git-exercise
    d8809a9..d38c950  main -> main
-PS C:\Users\Frankk\Desktop\git exercise solution> main
+PS C:\Users\Frankk\Desktop\git exercise solution>
