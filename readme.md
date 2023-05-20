@@ -622,3 +622,579 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/tpambrose/the-git-exercise
    0c6b076..2e6ec36  ft/service-redesign -> ft/service-redesign
 PS C:\Users\Frankk\Desktop\git exercise solution> ft/service-redesign
+ # Bundle 3
+ # exercise 1 $ 2
+ PS C:\Users\Frankk\Desktop\git exercise solution> git pull main
+fatal: 'main' does not appear to be a git repository
+fatal: Could not read from remote repository.      
+
+PS C:\Users\Frankk\Desktop\git exercise solution> git pull origin main
+From https://github.com/tpambrose/the-git-exercise
+Already up to date.
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout main
+Already on 'main'
+M       SERVICE.html
+M       service.html
+Your branch is up to date with 'origin/main'.
+PS C:\Users\Frankk\Desktop\git exercise solution> git add --all 
+PS C:\Users\Frankk\Desktop\git exercise solution> git commit -m "updated commit"
+[main a9be1d7] updated commit
+PS C:\Users\Frankk\Desktop\git exercise solution> git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 408 bytes | 136.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/tpambrose/the-git-exercise
+   0879a6b..a9be1d7  main -> main
+PS C:\Users\Frankk\Desktop\git exercise solution> git pull origin main
+From https://github.com/tpambrose/the-git-exercise
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+PS C:\Users\Frankk\Desktop\git exercise solution>                        
+ *  History restored 
+
+Switched to a new branch 'ft/service-redesign'
+PS C:\Users\Frankk\Desktop\git exercise solution> git status
+On branch ft/service-redesign
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SERVICE.html
+
+PS C:\Users\Frankk\Desktop\git exercise solution> git add --all
+PS C:\Users\Frankk\Desktop\git exercise solution> gti status
+gti : The term 'gti' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name,   
+or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ gti status
++ ~~~
+    + FullyQualifiedErrorId : CommandNotFoundException
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SERVICE.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Frankk\Desktop\git exercise solution> git SERVICE.htm
+PS C:\Users\Frankk\Desktop\git exercise solution> git add SERVICE.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git status
+On branch ft/service-redesign
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SERVICE.html
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Frankk\Desktop\git exercise solution> git add service.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git status
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SERVICE.html
+
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout main
+Switched to branch 'main'
+M       SERVICE.html
+Your branch is up to date with 'origin/main'.
+PS C:\Users\Frankk\Desktop\git exercise solution> git pull main
+fatal: 'main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS C:\Users\Frankk\Desktop\git exercise solution> git pull origin main
+remote: Enumerating objects: 8, done.
+remote: Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 1.30 KiB | 5.00 KiB/s, done.
+From https://github.com/tpambrose/the-git-exercise
+ * branch            main       -> FETCH_HEAD
+   a9be1d7..4a26e15  main       -> origin/main
+Updating a9be1d7..4a26e15
+Fast-forward
+ readme.md | 51 ++++++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 50 insertions(+), 1 deletion(-)
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SERVICE.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Frankk\Desktop\git exercise solution> git commit -m "service update"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SERVICE.html
+
+On branch main
+Your branch is up to date with 'origin/main'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SERVICE.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Frankk\Desktop\git exercise solution> git add SERVICE.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout ft/service-redesign
+M       SERVICE.html
+PS C:\Users\Frankk\Desktop\git exercise solution> gti status
+gti : The term 'gti' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name,   
+or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ gti status
++ ~~~
+    + FullyQualifiedErrorId : CommandNotFoundException
+On branch ft/service-redesign
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SERVICE.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Frankk\Desktop\git exercise solution> git add --all
+PS C:\Users\Frankk\Desktop\git exercise solution> git commit -m "ft/service-redesign"
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SERVICE.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Frankk\Desktop\git exercise solution> git add service.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git commit -m "updating new changes to service page"
+ 1 file changed, 3 insertions(+), 6 deletions(-)
+PS C:\Users\Frankk\Desktop\git exercise solution> git push 
+fatal: The current branch ft/service-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/service-redesign
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\Frankk\Desktop\git exercise solution>  git push --set-upstream origin ft/service-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Writing objects: 100% (3/3), 338 bytes | 338.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:      https://github.com/tpambrose/the-git-exercise/pull/new/ft/service-redesign
+remote:
+To https://github.com/tpambrose/the-git-exercise
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout main
+Switched to branch 'main'
+M       SERVICE.html
+Your branch is up to date with 'origin/main'.
+PS C:\Users\Frankk\Desktop\git exercise solution> git add service.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   service.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SERVICE.html
+
+PS C:\Users\Frankk\Desktop\git exercise solution> git add SERVICE.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git status
+On branch main
+
+Changes to be committed:
+        modified:   service.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SERVICE.html
+
+PS C:\Users\Frankk\Desktop\git exercise solution> git commit -m "changes is service page"
+[main ce57295] changes is service page
+PS C:\Users\Frankk\Desktop\git exercise solution> git push
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+To https://github.com/tpambrose/the-git-exercise
+   4a26e15..ce57295  main -> main
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout -b ft/service-redesign
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+M       SERVICE.html
+Your branch is up to date with 'origin/ft/service-redesign'.
+Already up to date.
+Auto-merging service.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git merge main
+error: Merging is not possible because you have unmerged files.
+hint: as appropriate to mark resolution and make a commit.
+PS C:\Users\Frankk\Desktop\git exercise solution> git add/rm service.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git add service html
+PS C:\Users\Frankk\Desktop\git exercise solution> git add service.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git merge main
+Please, commit your changes before you merge.
+PS C:\Users\Frankk\Desktop\git exercise solution> git commit -m "service page update "
+[ft/service-redesign 2e6ec36] service page update
+PS C:\Users\Frankk\Desktop\git exercise solution> git merge 
+PS C:\Users\Frankk\Desktop\git exercise solution> git merge main
+Already up to date.
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+M       SERVICE.html
+Your branch is ahead of 'origin/ft/service-redesign' by 7 commits.
+  (use "git push" to publish your local commits)
+PS C:\Users\Frankk\Desktop\git exercise solution> git diff main
+diff --git a/service.html b/service.html
+index 38ddcea..9e8797d 100644
++++ b/service.html
+@@ -3,16 +3,8 @@
+ <head>
+     <title>service</title>
+ </head>
+ <body>
+     <h1>Welcome to my service page!</h1>
+PS C:\Users\Frankk\Desktop\git exercise solution> git merge main
+Already up to date.
+PS C:\Users\Frankk\Desktop\git exercise solution> git commit -m "latest update"
+On branch ft/service-redesign
+Your branch is ahead of 'origin/ft/service-redesign' by 7 commits.
+  (use "git push" to publish your local commits)
+
+PS C:\Users\Frankk\Desktop\git exercise solution> git push
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/tpambrose/the-git-exercise
+PS C:\Users\Frankk\Desktop\git exercise solution> git push
+PS C:\Users\Frankk\Desktop\git exercise solution> git pull 
+From https://github.com/tpambrose/the-git-exercise
+   e3c6dd7..0c9f725  ft/bundle-2 -> origin/ft/bundle-2
+Already up to date.
+Switched to branch 'main'
+M       readme.md
+Your branch is up to date with 'origin/main'.
+PS C:\Users\Frankk\Desktop\git exercise solution> git pull
+Already up to date.
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+M       SERVICE.html
+M       readme.md
+PS C:\Users\Frankk\Desktop\git exercise solution> git push origin
+Enumerating objects: 5, done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.96 KiB | 669.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/tpambrose/the-git-exercise
+   2e6ec36..cc71c69  ft/service-redesign -> ft/service-redesign
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\Frankk\Desktop\git exercise solution> git pull
+remote: Enumerating objects: 2, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+From https://github.com/tpambrose/the-git-exercise
+Fast-forward
+ readme.md    | 261 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ service.html |   8 --
+ 2 files changed, 260 insertions(+), 9 deletions(-)
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout main
+Your branch is up to date with 'origin/main'.
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout -b ft/team-page
+Switched to a new branch 'ft/team-page'
+PS C:\Users\Frankk\Desktop\git exercise solution> git status
+On branch ft/team-page
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   team.html
+
+PS C:\Users\Frankk\Desktop\git exercise solution> git commit -m "new team.html page"
+[ft/team-page 3bcc1fc] new team.html page
+ 1 file changed, 15 insertions(+)
+ create mode 100644 team.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git push origin ft/team-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 419 bytes | 209.00 KiB/s, done.
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:
+To https://github.com/tpambrose/the-git-exercise
+ * [new branch]      ft/team-page -> ft/team-page
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout -b ft/contact-page
+Switched to a new branch 'ft/contact-page'
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout ft/team-page
+Switched to branch 'ft/team-page'
+PS C:\Users\Frankk\Desktop\git exercise solution> git log
+Author: teta <tpambrose0@example.com>
+
+
+commit 70b4ef4cfd5ecae2ff9157a5240ad8b4baa14526 (origin/main, main, ft/contact-page)
+Merge: a1a9416 cc71c69
+Author: Teta Precious <110498537+tpambrose@users.noreply.github.com>
+Date:   Sat May 20 13:39:37 2023 +0000
+
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout ft/team-page
+Switched to branch 'ft/team-page'
+PS C:\Users\Frankk\Desktop\git exercise solution> git log
+Author: teta <tpambrose0@example.com>
+
+    new team.html page
+
+commit 70b4ef4cfd5ecae2ff9157a5240ad8b4baa14526 (origin/main, main, ft/contact-page)
+Author: Teta Precious <110498537+tpambrose@users.noreply.github.com>
+
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+PS C:\Users\Frankk\Desktop\git exercise solution> git cherry- pick commit 3bcc1fc282510bdae6aaee75c62a007284b80fed
+The most similar command is
+        cherry
+PS C:\Users\Frankk\Desktop\git exercise solution> git cherry-pick commit 3bcc1fc282510bdae6aaee75c62a007284b80fed
+PS C:\Users\Frankk\Desktop\git exercise solution> git cherry-pick 3bcc1fc282510bdae6aaee75c62a007284b80fed       
+[ft/contact-page 3f9e054] new team.html page
+ Date: Sat May 20 13:48:06 2023 +0000
+ 1 file changed, 15 insertions(+)
+ create mode 100644 team.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git add contact.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git commit -m "contact page "
+[ft/contact-page e0a5aa7] contact page
+ create mode 100644 contact.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git push
+fatal: The current branch ft/contact-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/contact-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\Frankk\Desktop\git exercise solution> git push --set-upstream origin ft/contact-page
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Writing objects: 100% (6/6), 759 bytes | 151.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+remote:
+remote:      https://github.com/tpambrose/the-git-exercise/pull/new/ft/contact-page
+To https://github.com/tpambrose/the-git-exercise
+branch 'ft/contact-page' set up to track 'origin/ft/contact-page'.
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout ft/contact-page
+Already on 'ft/contact-page'
+Your branch is up to date with 'origin/ft/contact-page'.
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout ft/faq-page
+error: pathspec 'ft/faq-page' did not match any file(s) known to git
+PS C:\Users\Frankk\Desktop\git exercise solution> git add fag.html
+fatal: pathspec 'fag.html' did not match any files
+PS C:\Users\Frankk\Desktop\git exercise solution> git status
+On branch ft/faq-page
+Untracked files:
+        faq.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Frankk\Desktop\git exercise solution> git status
+On branch ft/faq-page
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   faq.html
+
+PS C:\Users\Frankk\Desktop\git exercise solution> git commit -m "add new file faq.html"
+[ft/faq-page 837b98a] add new file faq.html
+ create mode 100644 faq.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git push
+fatal: The current branch ft/faq-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/faq-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\Frankk\Desktop\git exercise solution>  git push --set-upstream origin ft/faq-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Writing objects: 100% (3/3), 383 bytes | 127.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/tpambrose/the-git-exercise/pull/new/ft/faq-page
+remote:
+To https://github.com/tpambrose/the-git-exercise
+ * [new branch]      ft/faq-page -> ft/faq-page
+branch 'ft/faq-page' set up to track 'origin/ft/faq-page'.
+PS C:\Users\Frankk\Desktop\git exercise solution> git log 
+
+Author: teta <tpambrose0@example.com>
+Date:   Sat May 20 14:16:10 2023 +0000
+
+
+commit e0a5aa75d55da9d20e5975a831102b1ba2c27ea3 (origin/ft/contact-page, ft/contact-page)
+Author: teta <tpambrose0@example.com>
+Date:   Sat May 20 14:04:01 2023 +0000
+
+    contact page
+PS C:\Users\Frankk\Desktop\git exercise solution> git revert 3bcc1fc282510bdae6aaee75c62a007284b80fed
+[ft/faq-page f5c0eed] Revert "new team.html page"
+ 1 file changed, 15 deletions(-)
+ delete mode 100644 team.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git log
+Author: teta <tpambrose0@example.com>
+Date:   Sat May 20 14:22:14 2023 +0000
+
+    Revert "new team.html page"
+
+    This reverts commit 3bcc1fc282510bdae6aaee75c62a007284b80fed.
+
+commit 837b98a928f22e4cde516de44e593983c02aa518 (origin/ft/faq-page)
+Author: teta <tpambrose0@example.com>
+PS C:\Users\Frankk\Desktop\git exercise solution> git push
+Enumerating objects: 3, done.
+Delta compression using up to 4 threads
+Writing objects: 100% (2/2), 270 bytes | 270.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+   837b98a..f5c0eed  ft/faq-page -> ft/faq-page
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout ft/faq-page
+Already on 'ft/faq-page'
+Your branch is up to date with 'origin/ft/faq-page'.
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout main
+Your branch is up to date with 'origin/main'.
+PS C:\Users\Frankk\Desktop\git exercise solution> git add home.html
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   home.html
+
+PS C:\Users\Frankk\Desktop\git exercise solution> git commit -m "the changes made in main"
+PS C:\Users\Frankk\Desktop\git exercise solution> git push 
+To https://github.com/tpambrose/the-git-exercise
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/tpambrose/the-git-exercise'
+hint: Updates were rejected because the remote contains work that you do
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\Frankk\Desktop\git exercise solution> git add --all
+PS C:\Users\Frankk\Desktop\git exercise solution> git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+PS C:\Users\Frankk\Desktop\git exercise solution> git push
+To https://github.com/tpambrose/the-git-exercise
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/tpambrose/the-git-exercise'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\Frankk\Desktop\git exercise solution> git push --help
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 637 bytes | 12.00 KiB/s, done.
+From https://github.com/tpambrose/the-git-exercise
+   70b4ef4..7cd5410  main       -> origin/main
+ team.html | 15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+ create mode 100644 team.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git add --all
+PS C:\Users\Frankk\Desktop\git exercise solution> git commit -m "update "
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+PS C:\Users\Frankk\Desktop\git exercise solution> git push 
+Counting objects: 100% (8/8), done.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 569 bytes | 569.00 KiB/s, done.
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/tpambrose/the-git-exercise
+   7cd5410..a65d31e  main -> main
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout -b ft/home-page-redesign
+fatal: a branch named 'ft/home-page-redesign' already exists
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+PS C:\Users\Frankk\Desktop\git exercise solution> git status
+On branch ft/home-page-redesign
+nothing to commit, working tree clean
+PS C:\Users\Frankk\Desktop\git exercise solution> git log
+Date:   Sat May 20 14:22:14 2023 +0000
+    Revert "new team.html page"
+
+    This reverts commit 3bcc1fc282510bdae6aaee75c62a007284b80fed.
+
+Author: teta <tpambrose0@example.com>
+Date:   Sat May 20 14:16:10 2023 +0000
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout ft/home-page-redesign
+Already on 'ft/home-page-redesign'
+PS C:\Users\Frankk\Desktop\git exercise solution> git rebase main
+warning: skipped previously applied commit 3f9e054
+hint: use --reapply-cherry-picks to include skipped commits
+hint: Disable this message with "git config advice.skippedCherryPicks false"
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+nothing to commit, working tree clean
+PS C:\Users\Frankk\Desktop\git exercise solution> git status
+On branch ft/home-page-redesign
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+        modified:   home.html
+
+PS C:\Users\Frankk\Desktop\git exercise solution> git add home.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git status
+On branch ft/home-page-redesign
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   home.html
+
+PS C:\Users\Frankk\Desktop\git exercise solution> git commit -m "new changes to home page"
+ 1 file changed, 3 insertions(+)
+PS C:\Users\Frankk\Desktop\git exercise solution> git push
+fatal: The current branch ft/home-page-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/home-page-redesign
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\Frankk\Desktop\git exercise solution>  git push --set-upstream origin ft/home-page-redesign
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 1.17 KiB | 299.00 KiB/s, done.
+Total 11 (delta 6), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (6/6), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/tpambrose/the-git-exercise/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/tpambrose/the-git-exercise
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
