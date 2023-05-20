@@ -363,3 +363,262 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/tpambrose/the-git-exercise
    d8809a9..d38c950  main -> main
 PS C:\Users\Frankk\Desktop\git exercise solution>
+
+# Exercise 2
+
+PS C:\Users\Frankk\Desktop\git exercise solution> git pull origin main
+From https://github.com/tpambrose/the-git-exercise
+Already up to date.
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout main
+Already on 'main'
+M       SERVICE.html
+M       service.html
+Your branch is up to date with 'origin/main'.
+PS C:\Users\Frankk\Desktop\git exercise solution> git add --all 
+PS C:\Users\Frankk\Desktop\git exercise solution> git commit -m "updated commit"
+[main a9be1d7] updated commit
+PS C:\Users\Frankk\Desktop\git exercise solution> git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 408 bytes | 136.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/tpambrose/the-git-exercise
+   0879a6b..a9be1d7  main -> main
+PS C:\Users\Frankk\Desktop\git exercise solution> git pull origin main
+From https://github.com/tpambrose/the-git-exercise
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+PS C:\Users\Frankk\Desktop\git exercise solution>                        
+ *  History restored 
+
+Switched to a new branch 'ft/service-redesign'
+PS C:\Users\Frankk\Desktop\git exercise solution> git status
+On branch ft/service-redesign
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SERVICE.html
+
+PS C:\Users\Frankk\Desktop\git exercise solution> git add --all
+PS C:\Users\Frankk\Desktop\git exercise solution> gti status
+gti : The term 'gti' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name,   
+or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ gti status
++ ~~~
+    + FullyQualifiedErrorId : CommandNotFoundException
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SERVICE.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Frankk\Desktop\git exercise solution> git SERVICE.htm
+PS C:\Users\Frankk\Desktop\git exercise solution> git add SERVICE.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git status
+On branch ft/service-redesign
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SERVICE.html
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Frankk\Desktop\git exercise solution> git add service.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git status
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SERVICE.html
+
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout main
+Switched to branch 'main'
+M       SERVICE.html
+Your branch is up to date with 'origin/main'.
+PS C:\Users\Frankk\Desktop\git exercise solution> git pull main
+fatal: 'main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS C:\Users\Frankk\Desktop\git exercise solution> git pull origin main
+remote: Enumerating objects: 8, done.
+remote: Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 1.30 KiB | 5.00 KiB/s, done.
+From https://github.com/tpambrose/the-git-exercise
+ * branch            main       -> FETCH_HEAD
+   a9be1d7..4a26e15  main       -> origin/main
+Updating a9be1d7..4a26e15
+Fast-forward
+ readme.md | 51 ++++++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 50 insertions(+), 1 deletion(-)
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SERVICE.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Frankk\Desktop\git exercise solution> git commit -m "service update"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SERVICE.html
+
+On branch main
+Your branch is up to date with 'origin/main'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SERVICE.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Frankk\Desktop\git exercise solution> git add SERVICE.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout ft/service-redesign
+M       SERVICE.html
+PS C:\Users\Frankk\Desktop\git exercise solution> gti status
+gti : The term 'gti' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name,   
+or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ gti status
++ ~~~
+    + FullyQualifiedErrorId : CommandNotFoundException
+On branch ft/service-redesign
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SERVICE.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Frankk\Desktop\git exercise solution> git add --all
+PS C:\Users\Frankk\Desktop\git exercise solution> git commit -m "ft/service-redesign"
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SERVICE.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Frankk\Desktop\git exercise solution> git add service.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git commit -m "updating new changes to service page"
+ 1 file changed, 3 insertions(+), 6 deletions(-)
+PS C:\Users\Frankk\Desktop\git exercise solution> git push 
+fatal: The current branch ft/service-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/service-redesign
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\Frankk\Desktop\git exercise solution>  git push --set-upstream origin ft/service-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Writing objects: 100% (3/3), 338 bytes | 338.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:      https://github.com/tpambrose/the-git-exercise/pull/new/ft/service-redesign
+remote:
+To https://github.com/tpambrose/the-git-exercise
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout main
+Switched to branch 'main'
+M       SERVICE.html
+Your branch is up to date with 'origin/main'.
+PS C:\Users\Frankk\Desktop\git exercise solution> git add service.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   service.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SERVICE.html
+
+PS C:\Users\Frankk\Desktop\git exercise solution> git add SERVICE.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git status
+On branch main
+
+Changes to be committed:
+        modified:   service.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SERVICE.html
+
+PS C:\Users\Frankk\Desktop\git exercise solution> git commit -m "changes is service page"
+[main ce57295] changes is service page
+PS C:\Users\Frankk\Desktop\git exercise solution> git push
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+To https://github.com/tpambrose/the-git-exercise
+   4a26e15..ce57295  main -> main
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout -b ft/service-redesign
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+M       SERVICE.html
+Your branch is up to date with 'origin/ft/service-redesign'.
+Already up to date.
+Auto-merging service.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git merge main
+error: Merging is not possible because you have unmerged files.
+hint: as appropriate to mark resolution and make a commit.
+PS C:\Users\Frankk\Desktop\git exercise solution> git add/rm service.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git add service html
+PS C:\Users\Frankk\Desktop\git exercise solution> git add service.html
+PS C:\Users\Frankk\Desktop\git exercise solution> git merge main
+Please, commit your changes before you merge.
+PS C:\Users\Frankk\Desktop\git exercise solution> git commit -m "service page update "
+[ft/service-redesign 2e6ec36] service page update
+PS C:\Users\Frankk\Desktop\git exercise solution> git merge 
+PS C:\Users\Frankk\Desktop\git exercise solution> git merge main
+Already up to date.
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\Frankk\Desktop\git exercise solution> git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+M       SERVICE.html
+Your branch is ahead of 'origin/ft/service-redesign' by 7 commits.
+  (use "git push" to publish your local commits)
+PS C:\Users\Frankk\Desktop\git exercise solution> git diff main
+diff --git a/service.html b/service.html
+index 38ddcea..9e8797d 100644
++++ b/service.html
+@@ -3,16 +3,8 @@
+ <head>
+     <title>service</title>
+ </head>
+ <body>
+     <h1>Welcome to my service page!</h1>
+PS C:\Users\Frankk\Desktop\git exercise solution> git merge main
+Already up to date.
+PS C:\Users\Frankk\Desktop\git exercise solution> git commit -m "latest update"
+On branch ft/service-redesign
+Your branch is ahead of 'origin/ft/service-redesign' by 7 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\Frankk\Desktop\git exercise solution> git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 250 bytes | 250.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/tpambrose/the-git-exercise
+   0c6b076..2e6ec36  ft/service-redesign -> ft/service-redesign
+PS C:\Users\Frankk\Desktop\git exercise solution> ft/service-redesign
